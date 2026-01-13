@@ -20,7 +20,14 @@ Aplikasi ini berfokus pada keseimbangan antara fungsionalitas backend yang tangg
 
 ## 📊 ERD (Entity Relationship Diagram)
 Skema database yang menghubungkan antara akun pengguna dan tugas-tugasnya.
-
+```text
+[ User ] ---1:N--- [ Task ]
+  - id (PK)          - id (PK)
+  - name             - user_id (FK)
+  - email            - title
+  - password         - isCompleted
+                     - createdAt
+```
 
 ## 🛠️ Alur Aplikasi 
 Berikut adalah gambaran bagaimana data mengalir di dalam aplikasi Blossom:
@@ -36,28 +43,35 @@ Berikut adalah gambaran bagaimana data mengalir di dalam aplikasi Blossom:
 Buat file .env di folder backend dan isi dengan parameter berikut (gunakan .env.example sebagai referensi):
 
 Cuplikan kode
+```
 PORT=3000
 DATABASE_URL=isi_dengan_url_database_anda
 JWT_SECRET=kata_rahasia_untuk_keamanan_token
+```
 
 3. Menjalankan Backend
+```
 cd backend
 npm install
 npm start
+```
 
 4. Menjalankan Frontend
+```
 cd frontend
 npm install
 npm run dev
+```
 
 ## 📌 Dokumentasi Endpoint API
-Method,Endpoint,Deskripsi
-POST,/api/auth/register,Membuat akun gardener baru
-POST,/api/auth/login,Login dan mendapatkan JWT Token
-GET,/api/tasks,Mengambil semua daftar tugas milik user
-POST,/api/tasks,Menanam/menambahkan tugas baru
-PUT,/api/tasks/:id,Memperbarui status selesai tugas
-DELETE,/api/tasks/:id,Menghapus tugas dari taman
+|Method|Endpoint|Deskripsi|
+|---|---|---|
+|POST|/api/auth/register|Membuat akun gardener baru|
+|POST|/api/auth/login|Login dan mendapatkan JWT Token|
+|GET|/api/tasks|Mengambil semua daftar tugas milik user|
+|POST|/api/tasks|Menanam/menambahkan tugas baru|
+|PUT|/api/tasks/:id|Memperbarui status selesai tugas|
+|DELETE|/api/tasks/:id|Menghapus tugas dari taman|
 
 ## 👥 Kontribusi Kelompok 1 
 Kerja sama tim dalam pengembangan Blossom Tasks:
