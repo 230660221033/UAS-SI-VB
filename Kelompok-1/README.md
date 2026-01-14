@@ -33,20 +33,16 @@ Skema database yang menghubungkan antara akun pengguna dan tugas-tugasnya.
 Berikut adalah gambaran bagaimana data mengalir di dalam aplikasi Blossom:
 
 **🚀 Panduan Instalasi & Setup**
-
 1. Persyaratan Sistem
 - Node.js (Versi 16 ke atas)
 - MongoDB Atlas atau MySQL Lokal
 - Akun Git
 
 2. Konfigurasi Environment (.env)
-Buat file .env di folder backend dan isi dengan parameter berikut (gunakan .env.example sebagai referensi):
-
-Cuplikan kode
 ```
 PORT=3000
-DATABASE_URL=isi_dengan_url_database_anda
-JWT_SECRET=kata_rahasia_untuk_keamanan_token
+DATABASE_URL=mongodb+srv://yellyambarwaty:yelly12345@cluster0.px5y9ky.mongodb.net/?appName=Cluster0
+JWT_SECRET=blossom_secret_key_2026_uas_proweb
 ```
 
 3. Menjalankan Backend
@@ -65,7 +61,7 @@ npm run dev
 
 ---
 
-##☁️ Deployment
+## ☁️ Deployment
 - Frontend: Netlify
 - Live URL: 🔗 https://blossomtasks.netlify.app/
 - Backend: Local Server (port 3000)
