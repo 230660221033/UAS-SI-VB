@@ -63,6 +63,30 @@ npm install
 npm run dev
 ```
 
+---
+
+##☁️ Deployment
+- Frontend: Netlify
+- Live URL: 🔗 https://blossomtasks.netlify.app/
+- Backend: Local Server (port 3000)
+
+## 👩🏻‍💻 Account Testing
+ ```
+ "email": "yelly@kelompok1.com"
+  "password": "Yelly12345"
+
+  "email": "nazwa@kelompok1.com",
+  "password": "Nazwa123456"
+
+  "email": "fitri@kelompok1.com",
+  "password": "Fitri12345"
+
+  "email": "tika@kelompok1.com",
+  "password": "Tika12345"
+```
+
+---
+
 ## 📌 Dokumentasi Endpoint API
 |Method|Endpoint|Deskripsi|
 |---|---|---|
@@ -73,14 +97,13 @@ npm run dev
 |PUT|/api/tasks/:id|Memperbarui status selesai tugas|
 |DELETE|/api/tasks/:id|Menghapus tugas dari taman|
 
+---
+
 ## 👥 Kontribusi Kelompok 1 
 Kerja sama tim dalam pengembangan Blossom Tasks:
-1. **Yelly Ambarwaty** (230660221033) - Lead UI/UX & Frontend Developer
-- Bertanggung jawab atas desain estetik Blossom, animasi CSS, dan seluruh logika React (TaskPage, Mood Tracker).
-2. **Nazwa Umaira Nanindia Ramdhani** (230660221008)- Backend Specialist
-- Membangun RESTful API menggunakan Express.js dan mengatur skema database serta keamanan JWT.
-3. **Fitri Cahyani** (230660221028)- API Integration & QA
-- Menghubungkan Frontend dengan API, mengelola Loading States, dan melakukan pengujian fungsionalitas (CRUD).
-4. **Tika Anggraeni** (230660221098) - Deployment & Documentation
-- Mengelola hosting di Railway/Netlify, menyusun README, ERD, dan menyiapkan aset presentasi.
-
+|Nama|NPM|Kontribusi|
+|---|---|---|
+|**Yelly Ambarwaty**|230660221033|UI/UX, Frontend Developer, Deployment, Documentation, Postman|
+|**Nazwa Umaira Nanindia Ramdhani**|230660221008|RESTful API, Skema database, Keamanan JWT|
+|**Tika Anggraeni**|230660221098|Postman, Pengujian fungsionalitas (CRUD), Frontend Developer|
+|**Fitri Cahyani**|230660221028|RESTful API, UI/UX, API Integration|
